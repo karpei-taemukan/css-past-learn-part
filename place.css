@@ -1,0 +1,56 @@
+body {
+  background: #000;
+}
+.grid {
+  display: grid;
+  height: 100vh;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  align-items: end;
+  /*place-items: end center;*/
+}
+.place {
+  display: grid;
+  height: 200vh;
+  gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: space-between;
+  align-content: stretch;
+  /*place-content: stretch space-between;*/
+}
+.header {
+  background-color: #2ecc71;
+  height: 40px;
+  width: 40px;
+}
+.content {
+  background-color: #3498db;
+  height: 40px;
+  width: 40px;
+}
+.nav {
+  background-color: #8e44ad;
+  height: 40px;
+  width: 40px;
+}
+.footer {
+  background-color: #f39c12;
+  height: 40px;
+  width: 40px;
+}
+
+.head {
+  background-color: #2ecc71;
+}
+.body {
+  background-color: #3498db;
+}
+.leg {
+  background-color: #8e44ad;
+}
+.foot {
+  background-color: #f39c12;
+}

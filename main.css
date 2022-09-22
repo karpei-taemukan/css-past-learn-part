@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+}
+.father {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  align-content: space-between;
+}
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background: peru;
+  color: white;
+  font-size: 60px;
+}
