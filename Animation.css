@@ -1,0 +1,57 @@
+/*             https://animista.net/        여러 애니메이션 모음           */
+
+body{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    div{
+    font-size: 50px;
+    color:lightcoral;
+    background-color: aqua;
+    border: 5px solid black;
+    border-radius: 30%;
+    animation: Flip 4s ease-in infinite;    
+    text-align: center;
+    }
+
+    @keyframes Flip {
+       /* from{
+transform: rotateY(0deg) translateY(0px);
+        }
+        to{
+transform: rotateY(360deg) translateY(200px);
+        }*/
+        0%{
+            transform: rotateY(0deg);
+        }
+        25%{
+            transform: scale(0);
+            border-radius: 0px;
+        }
+        50%{
+            transform: rotateY(180deg) translateY(300px);
+            border-color: darkgoldenrod;
+        }
+        75%{ 
+            transform: scale(2);
+            border-radius: 50%;
+        }
+        100%{
+            transform: rotateY(0deg) translateY(0px);
+        }
+
+    }
+
+
+    span{
+        font-size: 50px;
+    color:lightcoral;
+    background-color: aqua;
+    border: 5px solid black;
+    border-radius: 30%;
+    animation: Flip 3s ease-in infinite;    
+    text-align: center;
+    } 

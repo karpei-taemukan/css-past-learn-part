@@ -1,0 +1,31 @@
+body{
+    background-color: beige;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+button:hover{
+    background-color: darkblue;
+    color:greenyellow;
+    font-size: 200px;
+    border-radius: 20px;
+}
+/* @@@@@@@@@@ transition 은 ROOT에 있어야한다 state에 있으면 안된다 @@@@@@@@@@  */
+button{
+font-size: 100px;
+color:lightcoral;
+background-color: aqua;
+/*transition: background-color 1s ease-in-out, color 1s ease-in-out;*/
+transition: border-radius 1s  cubic-bezier(0.6, 0, 0.735, 0.045), 
+font-size 2s ease-in-out, 
+background-color 3s ease-in-out, 
+color 4s ease-in-out ; /* 애니메이션 변화 시키려는 요소들이 하나라도 빠지면 안된다*/
+}
+
+/*https://matthewlein.com/tools/ceaser    애니메이션 변화에 관한 site  */
+
+
+/*
+&&&&&&&&&&&&&&& transition은 어떤 State에서 다른 State로 변화하는 애니메이션을 만든다  &&&&&&&&&&&&&&&
+*/

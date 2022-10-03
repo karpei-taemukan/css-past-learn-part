@@ -1,0 +1,32 @@
+body{
+background-color: beige;
+}
+
+div{
+font-size: 50px;
+color:lightcoral;
+background-color: aqua;
+border: 5px solid black;
+border-radius: 30%;
+/*transform: rotate3d(0, 1, 0, 180deg);*/
+transform: translateY(150px);
+text-align: center;
+transition : transform 2s ease-in-out, background-color 1s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* @@@@@@@@@@ transition 은 ROOT에 있어야한다 state에 있으면 안된다 @@@@@@@@@@  */
+
+/*  tranform
+다른 요소의 속성을 변형시키지 않고 원하는 요소만 이동시킴
+*/
+
+span{
+font-size: 100px;
+color:lightcoral;
+}
+
+div:active{
+    background-color: cadetblue;
+    transform: translateY(-150px);
+    transform:  matrix(0, 1, 1, 0, 0, 0);
+}
