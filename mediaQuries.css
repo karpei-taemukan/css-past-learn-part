@@ -1,0 +1,48 @@
+/* Media Query는 오직 css만을 이용해서 스크린의 크기를 알수있는 방법*/
+
+body{
+height: 100vh;
+background-color: beige;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+div{
+    font-size: 50px;
+    color:lightcoral;
+    background-color: aqua;
+    border: 5px solid black;
+    width: 200px;
+    height: 200px;
+    }
+
+
+@media screen and (max-height: 700px){
+       div{
+        background-color: red;
+}}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) and (orientation: portrait){
+    div{
+     background-color: blueviolet;
+     box-shadow: 10px 5px 5px black;
+    }
+    span{
+        font-size: 20px;
+    }
+}
+
+@media screen and (orientation: landscape){
+        div{
+         background-color: goldenrod;
+ }
+span{
+    display: none};
+}
+     @media print {
+        body{
+            background-color: cornflowerblue;
+        }
+     }
